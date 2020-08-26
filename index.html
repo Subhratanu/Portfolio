@@ -1,0 +1,576 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio of Subhratanu Saha</title>
+<link rel="icon" href="logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Questrial&display=swap');
+*
+{
+	margin:0;
+	padding:0;
+	font-family: 'Questrial', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+#home
+{
+	width:100%;
+	height:100vh;
+	/*background-color:#0FC;*/
+	background: rgba(0,255,191,1);
+background: -moz-linear-gradient(left, rgba(0,255,191,1) 0%, rgba(30,133,230,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,255,191,1)), color-stop(100%, rgba(30,133,230,1)));
+background: -webkit-linear-gradient(left, rgba(0,255,191,1) 0%, rgba(30,133,230,1) 100%);
+background: -o-linear-gradient(left, rgba(0,255,191,1) 0%, rgba(30,133,230,1) 100%);
+background: -ms-linear-gradient(left, rgba(0,255,191,1) 0%, rgba(30,133,230,1) 100%);
+background: linear-gradient(to right, rgba(0,255,191,1) 0%, rgba(30,133,230,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffbf', endColorstr='#1e85e6', GradientType=1 );
+	font-size:2em;
+	
+}
+#skill
+{
+	width:100%;
+	height:102vh;
+	background: rgba(255,51,160,1);
+background: -moz-linear-gradient(-45deg, rgba(255,51,160,1) 0%, rgba(223,223,7,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,51,160,1)), color-stop(100%, rgba(223,223,7,1)));
+background: -webkit-linear-gradient(-45deg, rgba(255,51,160,1) 0%, rgba(223,223,7,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,51,160,1) 0%, rgba(223,223,7,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,51,160,1) 0%, rgba(223,223,7,1) 100%);
+background: linear-gradient(135deg, rgba(255,51,160,1) 0%, rgba(223,223,7,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff33a0', endColorstr='#dfdf07', GradientType=1 );
+	font-size:1em;
+	position:relative;
+	z-index:-1;
+	
+}
+#certification
+{
+	width:100%;
+	height:120vh;
+	background: rgba(0,255,230,1);
+background: -moz-linear-gradient(45deg, rgba(0,255,230,1) 0%, rgba(0,221,255,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,255,230,1)), color-stop(100%, rgba(0,221,255,1)));
+background: -webkit-linear-gradient(45deg, rgba(0,255,230,1) 0%, rgba(0,221,255,1) 100%);
+background: -o-linear-gradient(45deg, rgba(0,255,230,1) 0%, rgba(0,221,255,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(0,255,230,1) 0%, rgba(0,221,255,1) 100%);
+background: linear-gradient(45deg, rgba(0,255,230,1) 0%, rgba(0,221,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffe6', endColorstr='#00ddff', GradientType=1 );
+	font-size:1em;
+	position:relative;
+	z-index:-1;
+	
+}
+#contact
+{
+	width:100%;
+	height:103vh;
+	background: rgba(227,211,32,1);
+background: -moz-linear-gradient(45deg, rgba(227,211,32,1) 0%, rgba(232,75,145,0.95) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(227,211,32,1)), color-stop(100%, rgba(232,75,145,0.95)));
+background: -webkit-linear-gradient(45deg, rgba(227,211,32,1) 0%, rgba(232,75,145,0.95) 100%);
+background: -o-linear-gradient(45deg, rgba(227,211,32,1) 0%, rgba(232,75,145,0.95) 100%);
+background: -ms-linear-gradient(45deg, rgba(227,211,32,1) 0%, rgba(232,75,145,0.95) 100%);
+background: linear-gradient(45deg, rgba(227,211,32,1) 0%, rgba(232,75,145,0.95) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3d320', endColorstr='#e84b91', GradientType=1 );
+	
+}
+.home-para
+{
+	padding:100px 40px;
+	line-height:40px;
+	letter-spacing:2px;
+	justify-content:center;
+	font-weight:600;
+	
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.img
+{
+	height:auto;
+	width:37%;
+	border-radius:5px;
+	float:right;
+	margin-top:12vh;
+	margin-right:7%;
+}
+span.sticky
+  {
+	  
+	  background:rgba(240,240,240,1);
+  }
+span
+  {
+	  position:fixed;
+	  top:0;
+	  left:0;
+	  width:100%;
+	  display:flex;
+	  transition:0.6s;
+  } 
+.icon
+{
+	margin-top:-20px;
+}
+.btn1
+{
+	height:auto;
+	padding:15px 15px;
+	/*background:rgba(0,153,255,0.8);*/
+	background: rgba(255,172,77,1);
+background: -moz-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,172,77,1)), color-stop(100%, rgba(255,141,10,1)));
+background: -webkit-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: -o-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: linear-gradient(to right, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac4d', endColorstr='#ff8d0a', GradientType=1 );
+	border:none;
+	font-size:23px;
+	display:inline-block;
+	margin-left:65%;
+	transition:0.9s ease-out;
+	border-radius:10px;
+	margin-top:-20px;
+	font-weight:600;
+}
+.btn1:hover
+{
+	background: rgba(255,151,77,1);
+background: -moz-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,151,77,1)), color-stop(100%, rgba(255,112,10,1)));
+background: -webkit-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: -o-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: linear-gradient(to right, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff974d', endColorstr='#ff700a', GradientType=1 );
+}
+.btn2
+{
+	
+	height:auto;
+	padding:15px 15px;
+	/*background:rgba(255,51,0,0.9);*/
+	background: rgba(255,151,77,1);
+background: -moz-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,151,77,1)), color-stop(100%, rgba(255,112,10,1)));
+background: -webkit-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: -o-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+background: linear-gradient(to right, rgba(255,151,77,1) 0%, rgba(255,112,10,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff974d', endColorstr='#ff700a', GradientType=1 );
+
+	border:none;
+	font-size:23px;
+	display:inline-block;
+	margin-left:5%;
+	transition:0.9s ease-out;
+	border-radius:10px;
+	font-weight:600;
+}
+.btn2:hover
+{
+	background: rgba(255,172,77,1);
+background: -moz-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,172,77,1)), color-stop(100%, rgba(255,141,10,1)));
+background: -webkit-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: -o-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+background: linear-gradient(to right, rgba(255,172,77,1) 0%, rgba(255,141,10,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac4d', endColorstr='#ff8d0a', GradientType=1 );
+}
+hr
+{
+	border:1px solid white;
+	width:15%;
+}
+.skill-container
+{
+	width:80%;
+	height:61vh;
+	/*background-color:rgba(255,255,255,0.3);*/
+	margin-left:10%;
+	-webkit-box-shadow: 0px 0px 9px 2px rgba(87,87,87,1);
+-moz-box-shadow: 0px 0px 9px 2px rgba(87,87,87,1);
+box-shadow: 0px 0px 9px 2px rgba(87,87,87,1);
+}
+.p1
+{
+	font-size:17px;
+	color:white;
+	font-weight:600;
+}
+.carousel-inner img {
+    width: 60%;
+    height: auto;
+}
+.c1
+{
+	width:30%;
+	height:530px;
+	background-image:url(21e80969400595.5b7fb3d1cccb0.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+	float:left;
+	
+}
+.c2
+{
+	float:right;
+	width:50%;
+	height:500px;
+	margin-top:50px;
+}
+.footer
+{
+	background:rgba(25,255,204,1);
+	width:100%;
+	height:100px;
+	text-align:center;
+	font-weight:600;
+	color:rgba(0,0,0,1);
+	font-size:18px;
+	
+}
+a
+{
+	text-decoration:none;
+	color:rgba(0,0,0,0.8);
+}
+a:hover
+{
+	color:black;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media (max-width: 1193px){
+.img
+{
+	height:auto;
+	width:90%;
+	border-radius:10px;
+	margin-right:5%;
+	margin-top:40px;
+	margin-bottom:30px;
+	
+}
+.home-para
+{
+	text-align:center;
+	padding:40px 40px;
+}
+.icon
+{
+	margin-top:-30px;
+}
+#home
+{
+	height:auto;
+}
+#skill
+{
+	height:auto;
+}
+#certification
+{
+	height:600px;
+}
+.btn1
+{
+	margin-left:14%;
+}
+.btn2
+{
+	margin-left:14%;
+}
+.skill-container
+{
+	height:auto;
+}
+.carousel-inner img
+{
+	margin-top:15vh;
+	width:80%;
+	
+}
+.c1
+{
+	display:none;
+}
+.c2
+{
+	width:80%;
+	margin-left:10%;
+}
+.footer
+{
+	height:auto;
+}
+#para
+{
+	margin-top:-23px;
+}
+}
+</style>
+</head>
+
+<body>
+<div id="home">
+<header id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#home">Home</a>
+  <a href="#skill">Skill</a>
+  <a href="#certification">Certification</a>
+  <a href="#contact">Contact</a>
+</header>
+
+<span class="icon" style="font-size:30px;cursor:pointer;  " onclick="openNav()"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9776;</span>
+<img class="img" src="subhro.png" alt="Subhratanu Saha"><br><br>
+<p class="home-para"><font size="+5">Hello!</font><br>I am <font color="#FF0000" size="+7">Subhratanu Saha</font>,<br>I am a Student &amp; a Web Developer.Visit my Portfolio website for more details.</p>
+<input type="submit" value="Resume" class="btn1">
+<input type="submit" value="Project&nbsp;" class="btn2">
+<br><br>
+</div>
+
+<!-- skill section -->
+
+<div id="skill">
+  <br><br><br><center><h1 style="font-weight:600;">Skills</h1><hr></center>
+  <div class="skill-container">
+  <div class="row">
+    <div class="col-sm-6" style="background-color:rgba(0,102,255,1);"><br>
+      <p class="p1">C Programming
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">Data Structure
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">Python Programming
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">HTML
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">CSS &amp; Bootstrap
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">JavaScript
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">Jquery
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">Angular JS
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">PHP
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">DBMS
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">SQL
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      
+    </div>
+    <div class="col-sm-6" style="background-color:rgba(0,102,255,1);">
+      <br><p class="p1" id="para">Data Science
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">Machine Learning
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">Computer Vision
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+      
+      <p class="p1">Node JS
+      <div class="progress" style="margin-top:-35px; width:40%; margin-left:60%;">
+   <div class="progress-bar bg-success" style="width:80%"></div>
+</div>
+      </p>
+    </div>
+  </div>
+    
+  </div>
+<br>
+</div>
+
+<!-- Certification -->
+
+<div id="certification" style="font-weight:600;">
+<br><br><br><center><h1 style="font-weight:600;">Certification</h1><hr>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="cert1.jpg" alt="NPTEL 1" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="cert2.jpg" alt="NPTEL 2" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="cert3.PNG" alt="Coursera" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="cert4.PNG" alt="Google" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="cert5.PNG" alt="AWS" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  
+</div></center>
+</div>
+
+<!-- Contact -->
+
+<div id="contact">
+<br><br><br><center><h1 style="font-weight:600;">Contact</h1><hr></center>
+
+<div class="c1"></div>
+<div class="c2">
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="width:70%;">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width:70%;">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Comments</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:70%;"></textarea>
+  </div>
+  <button type="submit" class="btn btn-danger" >Submit</button>
+</form>
+<br>
+<p style="font-weight:600;"><i class="fa fa-phone" style=" font-size:15px;color:red;"></i>&nbsp;&nbsp;&nbsp; +91 8337072947</p>
+<p style="font-weight:600;"><i class="fa fa-envelope-o" style="font-size:15px;color:red;"></i>&nbsp;&nbsp;&nbsp; subhratanusaha100@gmail.com</p>
+</div>
+
+
+</div>
+<footer class="footer">
+<br>
+<p>Website Designed and Developed by Subhratanu Saha &copy;</p>
+<a target=”_blank” href="https://www.facebook.com/subhratanu.boo"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+<a target=”_blank” href="https://www.instagram.com/subhratanu_saha/"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+<a target=”_blank” href="https://www.linkedin.com/in/subhratanu-saha-65933117b/"><i class="fa fa-linkedin" aria-hidden="true"></i>
+</footer>
+<!-- Javascript -->
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+window.addEventListener("scroll",function(){
+	var header=document.querySelector("span");
+	header.classList.toggle("sticky",window.scrollY>0);
+});
+</script>
+</body>
+</html>
